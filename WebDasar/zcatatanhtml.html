@@ -1,0 +1,493 @@
+<!--<p></p> = PARAGRAPH 
+    ~paragraph dapat berisi teks, gambar, input, dll            
+-->
+<p>
+    Hai namaku willy
+</p>
+<p>
+    SEkian terima aksih
+</p> <br><br><br>
+
+
+
+
+
+<!--<h1></h1> = HEADING
+    ~sebagai judul dan subjudul (dari h1 - h6)
+    ~ditulis dalam format BOLD dan ukuran BESAR                 
+-->
+<h1> 
+    Judul
+</h1>  
+<h6>
+    Subjudul
+</h6> <br><br><br>
+ 
+
+
+
+
+<!--<ul></ul> = UN-ORDERED LIST 
+    ~list dalam bentuk bullet
+    ~bisa menulis header, paragraph, nested list, dll
+-->
+<ul>Ini UNORDERED LIST
+    <li><h1>Bisa buat header</h1></li>
+    <li><p>Bisa buat paragraf</p></li>
+    <li>Bisa buat list lagi
+        <ul>ini list 2
+            <li>list 1</li>
+            <li>list 2</li>
+            <li>list 3</li>
+        </ul>
+    </li>
+</ul> <br><br><br>
+
+
+
+
+
+<!--<ol></ol> = ORDERED LIST
+    ~secara default pakai penomoran (1. 2. 3. 4.)
+    ~untuk mengganti tipe list          = <ol type="I"> </ol>       #tipenya : 1, a, A, i, I
+    ~untuk memulai dari urutan tertentu = <ol start="7"> </ol>      #tipe menyesuaikan
+    ~dapat di reverse                   = <ol reversed> </ol>
+-->
+<ol type="1" start="7" reversed>Ini ORDERED LIST 
+    <li>list7</li> 
+    <li>list6</li> <!--hanya angka yang dapat di start&reversed SEKALIGUS-->
+    <li>list5</li>
+</ol> <br><br><br>
+
+
+
+
+
+<!--<img> = image
+    ~merupakan ELEMEN KOSONG (tidak ada closing tag     -> </img>)
+    ~ada 2 atribut                                      -> src = SOURCE (bisa dari file local maupun web) & alt (alternatif teks jika gambar tidak ada)
+    ~ukuran dapat diatur NAMUN HARUS SESUAI RASIO       -> width = LEBAR & height = TINGGI 
+    ~ukuran dapat diatur melalui salah satu diantara width/height yang nantinya MENYESUAIKAN
+-->
+<img src="D:\WebDasar\HTMLVSC\assets\image\bosscha.jpg" alt="Gaada :(" width="200" height="100"> <br><br><br>
+
+
+
+
+
+<!--INLINE FORMATTING TEXT-->
+<!--<blockquote></blockquote>           = LONG QUOTATION
+    ~untuk referensi, sumber, testimoni, kutipan, dll1
+    ~ada atribut       -> cite (untuk menentukan sumber URL [TAK KASAT MATA di web])
+-->
+<blockquote cite="https://id.wikipedia.org/wiki/Situs_web">
+    <p>
+        Situs web (bahasa Inggris: website) adalah sekumpulan halaman web yang saling berhubungan yang
+        umumnya berada pada peladen yang sama berisikan kumpulan informasi yang disediakan secara
+        perorangan, kelompok, atau organisasi.
+    </p>
+</blockquote> <br><br><br>
+
+<!--<pre></pre>                         = PREFORMATTED TEXT
+    ~menulis persis apa yang ditulis di elemen pre tsb
+-->
+<pre>
+    Heehehehe
+ini di kiri
+                ini di kanan
+        thanks
+</pre> <br><br><br>
+
+<!--<figure></figure>                   = FIGURE
+    ~mempresentasikan konten tersendiri (self-contained content) -> ilustrasi, diagram, foto, baris kode
+    ~mengelompokkan blok konten yang dapat dipindahkan posisinya dari blok utama sebuah dokumen tanpa mempengaruhi arti dari induk dokumen.
+    ~ada elemen        -> <figcaption></figcaption> = judul dari konten
+-->
+<figure>
+    <img src="D:\WebDasar\HTMLVSC\assets\image\bosscha.jpg" alt="Gaada :(" width="200" height="100">
+    <figcaption>Bosscha</figcaption>
+</figure> <br><br><br>
+
+<!--<a></a>                             = ANCHOR
+-->
+<p>Hubungi kami di</p>
+<ul>
+  <li><a href="https://example.com">Website</a></li>
+  <li><a href="mailto:info@example.com">Email</a></li>
+  <li><a href="tel:+62123456">Telepon</a></li>
+  <li><a href="#address">Alamat</a></li>
+</ul> <br><br><br>
+
+<!--<em></em>                           = EMPHASIZED TEXT
+    ~untuk menunjukkan stress emphasize (kata yang perlu diperhatikan)
+    ~text menjadi italic
+-->
+<p>ini <em>emphasized text</em></p> <br><br><br>
+
+<!--<strong></strong>                   = IMPORTANT TEXT
+    ~text menjadi bold             
+-->
+<p>ini <strong>important text</strong></p> <br><br><br>
+
+<!--<q></q>                             = SHORT QUOTATION
+    ~text diberi tanda petik
+    ~ada atribut    -> cite 
+-->
+<p>Dilansir dari website Mozilla, <q cite="https://www.mozilla.org/en-US/about/history/details/">Firefox 1.0 diluncurkan
+     pada 2004 dan menjadi produk yang sukses.</q> 
+</p> <br><br><br>
+
+<!--<cite></cite>                       = CITATION
+    ~text menjadi italic berwarna biru
+-->
+<p> 
+    informasi ini diperoleh dari: <cite><a href="https://dicoding.com">dicoding.com</a>.</cite> <br><br><br>
+</p>
+
+<!--<dfn></dfn>                         = DEFINING TERMS
+    ~text menjadi italic
+-->
+<p><dfn>Ini defined</dfn></p> <br><br><br>
+
+<!--<sub></sub> & <sup></sup>           = SUBSCRIPT & SUPERSCRIPT
+-->
+<p>     C<sub>12</sub>H<sub>22</sub>O<sub>11</sub> <br> E = MC<sup>2</sup>       </p> <br><br><br>
+
+<!--<mark></mark>                       = HIGHLIGHTED TEXT
+    ~text di highlight kuning
+-->
+<p><mark>ini di highlight</mark></p> <br><br><br>
+
+<!--<br>                                = LINE BREAK
+    ~untuk ke baris baru
+-->
+<p>Hai <br>Pierre</p> <br><br><br>
+
+
+
+
+
+<!--SEMANTIC HTML-->
+<!--<article></article> & <header></header>     = Pengantar/pembuka konten
+    ~diawali article dulu baru header
+    ~article = container untuk independent content pada sebuah halaman
+-->
+<main>
+    <article>
+        <header>
+        <h1>Judul Artikel</h1>
+        <h2>Oleh: Willy</h2>
+        </header>
+        <p>
+        KONTEN ARTIKEL<!-- ....... Konten artikel dimulai dari sini ...... -->
+        </p>
+    </article>
+    <!--CONTOH PENGGUNAAN ARTICLE-->
+    <article>
+        <h2>Sejarah</h2>
+        <img src="img/history.jpg" alt="hilang">
+        <p>Kata Bandung berasal dari kata bendung atau bendungan karena terbendungnya sungai Citarum oleh lava Gunung Tangkuban Parahu yang lalu membentuk telaga...</p>
+    </article>
+    
+    <article>
+        <h2>Geografis</h2>
+        <img src="img/geografis.jpg" alt="hilang">
+        <p>Kota Bandung dikelilingi oleh pegunungan, sehingga bentuk morfologi wilayahnya bagaikan sebuah mangkok raksasa,[9] secara geografis kota ini terletak di tengah-tengah provinsi Jawa Barat..</p>
+    </article>
+    
+    <article>
+    <h2>Wisata</h2>
+        <img src="img/farm-house.jpg" alt="hilang">
+        <p>Sejak dibukanya Jalan Tol Cipularang, kota Bandung telah menjadi tujuan utama dalam menikmati liburan akhir pekan terutama dari masyarakat yang berasal dari Jakarta sekitarnya...</p>
+    </article>
+
+    <aside>
+        <article>
+        <header>
+            <h2>Kota Bandung</h2>
+            <p>Kota Kembang Paris van Java</p>
+            <figure>
+            <img src="D:\WebDasar\HTMLVSC\assets\image\farm-house.jpg" alt="hilang" width="200">
+            <figcaption>Lambang</figcaption>
+            </figure>
+        </header>
+        </article>
+    </aside>
+</main> <br><br><br>
+ 
+<!--<footer></footer> & <section></section>
+    ~catatan kaki sebuah elemen
+    ~section sebaiknya terdapat elemen heading (h1-h6), yang menjadi elemen pertama yang dituliskan pada sebuah section untuk menunjukkan judul atau tema dari bagian konten yang dikelompokkan.
+    ~section digunakan pada sebuah elemen <article> yang memiliki konten panjang dan berpotensi untuk dikelompokkan.
+-->
+<footer>
+    &copy; 2019, Hehe <!--%copy = ©-->
+</footer> <br><br><br>
+
+<!--<main></main>                               = konten utama dalam body
+    ~ada section/artikel/konten dalam <main> selama ia termasuk konten utama yang dimiliki oleh website.
+-->
+<body>
+    <header>
+        <h1>Halo</h1>
+    </header>
+    <main>
+        <p>Konten utama web</p>
+    </main>
+    <footer>
+      <!-- Konten footer website -->
+    </footer>
+</body> <br><br><br>
+
+<!--<nav></nav>                                 = navigasi yg sifatnya PENTING
+    ~contoh :navigasi utama pada sebuah website
+    ~referensi TIDAK PERLU <nav>
+-->
+
+
+
+
+
+<!--GENERIC ELEMENT-->
+<!--<div></div>                                 =  wadah (container) yang bersifat umum untuk menampung beberapa konten
+    ~tidak akan memberikan efek apa pun pada konten atau layout sebelum menerapkan sebuah style menggunakan CSS.
+    ~tidak merepresentasikan apa pun sebagai sebuah wadah yang murni
+    ~digunakan untuk mengelompokkan sebuah konten sehingga dapat memudahkan styling dengan menggunakan atribut class atau id.
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Div Element</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="shadowbox">
+      <p>
+        Paragraf ini berada di dalam elemen div, tetapi ia akan ditampilkan sama seperti paragraf
+        biasanya. Elemen ini lebih sering digunakan untuk mengelompokkan sebuah konten sehingga
+        dapat memudahkan styling dengan menggunakan atribut class atau id.
+      </p>
+    </div>
+  </body>
+</html> <br><br><br>
+
+<!--<span></span>                               = fungsinya sama dengan div cmn perbedaannya :
+    ~sebagai phrase elements dan tidak terdapat line breaks ketika menggunakannya.
+    ~<span> merupakan sebuah <div> yang digunakan dalam sebuah baris teks yang dapat diwadahi oleh paragraf, list, heading, atau lainnya.
+-->
+<style>
+    .phone {
+      font-weight: bold;
+    }
+</style>
+<ul>
+    <li>Agil: <span class="phone">08123xxx</span></li>
+    <li>Widy: <span class="phone">08222xxx</span></li>
+    <li>Gilang: <span class="phone">08333xxx</span></li>
+</ul> <br><br><br>
+
+<style>
+    .bahan {
+      color: red;
+    }
+</style>
+   
+<p>
+    Untuk membuat sebuah bakso kita membutuhkan <span class="bahan">daging sapi</span>,
+    <span class="bahan">tepung tapioka</span>, <span class="bahan">bawang merah</span> dan
+    <span class="bahan">bawang putih</span> kemudian satu sendok makan
+    <span class="bahan">gula</span> dan <span class="bahan">garam</span>.
+</p> <br><br><br>
+
+
+
+
+
+<!--<table</table>                  = tabel (row&column)
+    ~ada 3 elemen di dalam          = <tr>, <th>, <td>
+    ~<tr></tr>       -> Table Row (baris)
+    ~<th></th>       -> Table Header (judul tiap kolom)
+    ~<td></td>       -> Table Data (isi)
+    ~th & td dapat diisi konten-konten macam macam
+-->
+<h1>Pemenang Piala Dunia Tiga Tahun Terakhir</h1>
+
+<table>
+  <tr>
+    <th>Tahun</th>
+    <th>Juara 1</th>
+    <th>Juara 2</th>
+    <th>Juara 3</th>
+  </tr>
+  <tr>
+    <td>2018</td>
+    <td>Prancis</td>
+    <td>Kroasia</td>
+    <td>Belgium</td>
+  </tr>
+  <tr>
+    <td>2014</td>
+    <td>Jerman</td>
+    <td>Argentina</td>
+    <td>Belanda</td>
+  </tr>
+  <tr>
+    <td>2010</td>
+    <td>Spanyol</td>
+    <td>Belanda</td>
+    <td>Jerman</td>
+  </tr>
+</table> <br><br><br>  
+
+<!--SPANNING CELL       = menjangkau atau merentangkan sebuah ukuran sel lebih dari ukuran yang biasanya
+    SEPERTI MERGING CELL di microsoft excel-->
+<!--colspan                         = Column Spanning
+    ~dilakukan didalam th/td
+-->
+<table border="1">
+    <tr>
+      <th>18:00</th>
+      <th>19:00</th>
+      <th>20:00</th>
+    </tr>
+    <tr>
+      <td colspan="2">Avenger Infinity Wars</td>
+      <td>It Chapter 2</td>
+    </tr>
+    <tr>
+      <td>One Piece: Stampede</td>
+      <td>Weathering With You</td>
+      <td>Gundala</td>
+    </tr>
+    <tr>
+      <td>Gundala</td>
+      <td colspan="2">Avenger Infinity Wars</td>
+    </tr>
+</table> <br><br><br>  
+
+<!--rowspan                         = Row Spanning
+-->
+<table border="1">
+    <tr>
+      <th rowspan="3">18:00</th>
+      <td>Avenger Infinity Wars</td>
+    </tr>
+    <tr>
+      <td>One Piece: Stampede</td>
+    </tr>
+    <tr>
+      <td>Gundala</td>
+    </tr>
+</table> <br><br><br>
+
+
+
+
+<!--<input>                         = Input Element-->
+<input type="color"><br><br>
+
+<!-- Non-Single Line Input Element -->
+<input
+  type="text"
+  value="Belajar Dasar Pemrograman Web"
+/><br><br>
+
+<!--<textarea></textarea>           = Supaya terdapat baris
+-->
+<textarea rows="6" cols="16">
+    Belajar
+    Dasar
+    Pemrograman
+    Web
+</textarea> <br><br>
+
+<!--LABEL ELEMENT-->
+<div>
+    <label for="email">Email</label>
+    <br>
+    <input type="email" id="email" />
+</div>
+  
+<div>
+    <label for="password">Password</label>
+    <br>
+    <input type="password" id="password" />
+</div> <br><br>
+
+<!--ATRIBUT INPUT
+    ~ADA BANYAK JENIS
+    ~berikut contoh atribut placeholder dan required
+-->
+<label for="email">Email</label>
+    <br>
+    <input type="email" id="email" placeholder="example@mail.com" required />
+</div>
+
+<div>
+    <label for="password">Password</label>
+    <br>
+    <input type="password" id="password" placeholder="********" required />
+</div><br><br>
+
+<!--Mengirim data formulir
+    ~pakai FORM sebagai wrapping dari seluruh elemen input
+    -->
+
+<form>
+    <div>
+      <label for="email">Email</label>
+      <br />
+      <input type="email" id="email" placeholder="hehe" />
+    </div>
+   
+    <div>
+      <label for="password">Password</label>
+      <br />
+      <input type="password" id="password" />
+    </div>
+   
+    <button type="submit">Submit</button>
+</form><br><br>
+
+<!-- Atribut Name di Elemen Input 
+Dalam mengirimkan data ke server, kita wajib menerapkan atribut name pada seluruh kolom input dalam formulir. 
+Contohnya, Anda ingin membuat formulir untuk melakukan pemesanan kamar hotel. Anda harus memberi atribut name pada seluruh elemen input.
+-->
+<form>
+    <div>
+      <label for="fullName">Nama</label>
+      <input id="fullName" name="fullName" required />
+    </div>
+   
+    <div>
+      <label for="checkIn">Tanggal Check-In</label>
+      <input type="date" id="checkIn" name="checkIn" required />
+    </div>
+   
+    <div>
+      <label for="checkOut">Tanggal Check-Out</label>
+      <input type="date" id="checkOut" name="checkOut" required />
+    </div>
+   
+    <button type="submit">Submit</button>
+</form><br><br>
+
+<!--Cara Membawa Data Formulir
+    ~atribut action
+    (ABSOLUTE URL)
+    <form action="https://example.com/jalur/ke/alamat/destinasi"> 
+    </form>
+
+    (RELATIVE URL)
+    <form action="/jalur/ke/alamat/destinasi">
+    </form>
+
+    ~atribut method
+    (GET METHOD)
+    <form method="GET" action="https://example.com/">
+    </form>
+
+    (POST METHOD)
+    <form method="POST" action="https://example.com/">
+    </form>
+-->
